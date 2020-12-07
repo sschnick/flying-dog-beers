@@ -12,7 +12,6 @@ import plotly.graph_objects as go
 import pandas as pd
 import csv
 import math
-from PIL import Image
 from io import StringIO
 
 outputFile = 'output_suv_wagon_20201205.csv'
