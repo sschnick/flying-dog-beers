@@ -27,5 +27,5 @@ six==1.12.0
 traitlets==4.3.2
 Werkzeug==0.15.4
 dash-bootstrap-components==0.10.7
-request
-http
+requests==2.25.0
+
