@@ -208,7 +208,7 @@ def read_autotrader_csv(outputFile):
 
 
 
-# scrape_autotrader(outputFile)
+scrape_autotrader(outputFile)
 # df1 = read_autotrader_csv(outputFile)
 df = pd.read_pickle(dataFile)
 
