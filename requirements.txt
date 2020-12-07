@@ -1,11 +1,12 @@
 certifi==2019.6.16
 chardet==3.0.4
 Click==7.0
-dash==1.1.1
-dash-core-components==1.1.1
-dash-html-components==1.0.0
-dash-renderer==1.0.0
-dash-table==4.1.0
+dash==1.17.0
+dash-bootstrap-components==0.10.7
+dash-core-components==1.13.0
+dash-html-components==1.1.1
+dash-renderer==1.8.3
+dash-table==4.11.0
 dask==2.1.0
 decorator==4.4.0
 Flask==1.1.1
@@ -26,6 +27,5 @@ pytz==2019.1
 six==1.12.0
 traitlets==4.3.2
 Werkzeug==0.15.4
-dash-bootstrap-components==0.10.7
 requests==2.25.0
 beautifulsoup4==4.9.3
