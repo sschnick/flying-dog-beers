@@ -13,22 +13,22 @@ import pandas as pd
 import csv
 import math
 from io import StringIO
+from http import cookiejar  # Python 2: import cookielib as cookiejar
+import requests
+from bs4 import BeautifulSoup
+from locale import atof, setlocale, LC_NUMERIC
 
 outputFile = 'output_suv_wagon_20201205.csv'
 dataFile = outputFile[:-4]+".pkl"
 
 def scrape_autotrader(outputFile):
-    from http import cookiejar  # Python 2: import cookielib as cookiejar
     class BlockAll(cookiejar.CookiePolicy):
         return_ok = set_ok = domain_return_ok = path_return_ok = lambda self, *args, **kwargs: False
         netscape = True
         rfc2965 = hide_cookie2 = False
-    import requests
     s = requests.Session()
     s.cookies.set_policy(BlockAll())
     
-    from bs4 import BeautifulSoup
-    from locale import atof, setlocale, LC_NUMERIC
     setlocale(LC_NUMERIC, 'English_Canada.1252')
     
     urlHeaders = {
